@@ -6,7 +6,7 @@
 
 </head>
 <body>
-
+<a href="/friends_exists/Fouad">frienf</a>
 <h2>Facebook Search Bar</h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
@@ -20,6 +20,9 @@
   <li><a href="#">Christina</a></li>
   <li><a href="#">Cindy</a></li>
   <li><a href="#">Loai</a></li>
+  {% for friend in friends %}
+  <li><a href="#">{{ friend }}</a></li>
+  {% endfor %}
 </ul>
 
 <script>
